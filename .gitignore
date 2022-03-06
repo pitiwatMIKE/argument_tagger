@@ -4,3 +4,9 @@
 *thai2vecNoSym.bin
 *__pycache__
 thai2vec
+*.gz
+**/LST20_Corpus
+._LST20_Corpus
+**/cache_dir
+**/runs
+**/outputs
