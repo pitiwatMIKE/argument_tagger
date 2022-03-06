@@ -1,0 +1,57 @@
+.container{
+    max-width: 1100px;
+    margin-top: 5em;
+}
+
+#input_text {
+    font-size: 18px;
+}
+
+#output {
+    font-size: 18px;
+}
+
+claim, premise{
+    padding: 4px 8px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 1px 4px;
+    border: 3px solid white;
+}
+
+claim {
+    background-color: #F76300;
+}
+
+premise{
+    background: #A6E22D;
+}
+
+claim::after{
+    content: "CLAIM";
+    background-color: white;
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 14px;
+    margin: 10px 1px 10px 15px;
+    font-weight: 500;
+}
+
+premise::after{
+    content: "PREMISE";
+    background-color: white;
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 14px;
+    margin: 10px 1px 10px 15px;
+    font-weight: 500;
+}
+
+.label{
+    background-color: white;
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 14px;
+    margin: 10px 1px 10px 15px;
+    font-weight: 500;
+}
