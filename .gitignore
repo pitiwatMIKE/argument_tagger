@@ -12,3 +12,4 @@ thai2vec
 **/outputs
 **weigh*
 **model_seq_512
+**/checkpoint*
