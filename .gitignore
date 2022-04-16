@@ -10,3 +10,8 @@ thai2vec
 **/cache_dir
 **/runs
 **/outputs
+**weigh*
+**model_seq_512
+**/checkpoint*
+**/push_huggingface
+**/tmp_trainer
