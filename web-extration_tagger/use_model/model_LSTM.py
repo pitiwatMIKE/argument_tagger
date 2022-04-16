@@ -7,7 +7,7 @@ from gensim.models import KeyedVectors
 
 # Utility
 import numpy as np
-from utils.use import tag_html_format, prepocess_text
+from utils.use import tag_html_format2, prepocess_text
 
 import tensorflow as tf
 from tensorflow.keras.preprocessing.sequence import pad_sequences
@@ -137,4 +137,4 @@ def prediction(text):
 def call_model_LSTM(text):
     list_word, predict_tag = prediction(text)
     predict_tag = ['O' if tag == 'pad' else tag for tag in predict_tag]
-    return tag_html_format(zip(list_word, predict_tag))
+    return tag_html_format2(zip(list_word, predict_tag))

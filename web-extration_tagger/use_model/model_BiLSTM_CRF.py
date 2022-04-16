@@ -6,7 +6,7 @@ import torch.nn as nn
 import torch.optim as optim
 
 import dill
-from utils.use import tag_html_format, prepocess_text
+from utils.use import tag_html_format2, prepocess_text
 
 path = "./trained_model/BiLSTM-CRF/"
 
@@ -197,4 +197,4 @@ def predict(input_sent):
 def call_model_BiLSTM_CRF(text):
     list_word = prepocess_text(text)
     predict_tag = predict(list_word)
-    return tag_html_format(zip(list_word, predict_tag))
+    return tag_html_format2(zip(list_word, predict_tag))
