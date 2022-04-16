@@ -136,4 +136,5 @@ def prediction(text):
 
 def call_model_LSTM(text):
     list_word, predict_tag = prediction(text)
+    predict_tag = ['O' if tag == 'pad' else tag for tag in predict_tag]
     return tag_html_format(zip(list_word, predict_tag))
