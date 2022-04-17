@@ -11,6 +11,7 @@ from use_model.model_CRF import call_model_CRF
 from use_model.model_LSTM import call_model_LSTM
 from use_model.model_BiLSTM import call_model_BiLSTM
 from use_model.model_BiLSTM_CRF import call_model_BiLSTM_CRF
+from use_model.model_wangchanberta import call_model_wanchanberta
 
 app = Flask(__name__, static_url_path="/static", static_folder='./static')
 
@@ -50,9 +51,27 @@ def predict():
         predict = call_model_BiLSTM(input_text)
     elif model_name == "BiLSTM-CRF":
         predict = call_model_BiLSTM_CRF(input_text)
+    elif model_name == "wangchanberta":
+        predict = call_model_wanchanberta(input_text)
         
     result = {'predict': predict}
     return jsonify(result)
+
+@app.route('/predict_all', methods=['POST'])
+def predict_all():
+    input_text = request.json["input_text"]
+    result = []
+
+    result = {
+        'crf': call_model_CRF(input_text),
+        'lstm': call_model_LSTM(input_text),
+        'bilstm': call_model_BiLSTM(input_text),
+        'bilstm_crf': call_model_BiLSTM_CRF(input_text),
+        'wangchanberta': call_model_wanchanberta(input_text)
+    }
+
+    return jsonify(result)
+
 
 @app.route('/display/<filename>')
 def display_image(filename):
@@ -60,4 +79,5 @@ def display_image(filename):
 
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run(debug=True)
+    app.config["TEMPLATES_AUTO_RELOAD"] = True
