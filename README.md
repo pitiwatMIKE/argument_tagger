@@ -14,17 +14,13 @@
 |BiLSTM| 0.76 | 0 .58| 0.59 | 0.67 | 0.63 |
 |BiLSTM-CRF| 0.41 | 0.34 | 0.32 | 0.48 | 0.41 |
 |Wangchanberta| 0.75 | 0.64 | 0.65 | 0.72 | 0.65 |
-
+<br />
+<br />
 # Bar Plot
-
 ![sentence](https://user-images.githubusercontent.com/68042822/163938892-591039d1-f0da-4a3d-bf82-a65549525b1e.png)
 ![word](https://user-images.githubusercontent.com/68042822/163938953-073c2bee-7187-4047-9e73-657ec0a3dae3.png)
-
-
-
-
-
-
+<br />
+<br />
 # CRF
 | Accuracy | 0.59 |
 | :------: | :------: |
