@@ -15,6 +15,8 @@
 |BiLSTM-CRF| 0.41 | 0.34 | 0.32 | 0.48 | 0.41 |
 |Wangchanberta| 0.75 | 0.64 | 0.65 | 0.72 | 0.65 |
 
+# Bar Plot
+
 ![sentence](https://user-images.githubusercontent.com/68042822/163938892-591039d1-f0da-4a3d-bf82-a65549525b1e.png)
 
 
