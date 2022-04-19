@@ -19,7 +19,7 @@
 
 # Bar Plot
 ![sentence](https://user-images.githubusercontent.com/68042822/163938892-591039d1-f0da-4a3d-bf82-a65549525b1e.png)
-![word](https://user-images.githubusercontent.com/68042822/163938953-073c2bee-7187-4047-9e73-657ec0a3dae3.png)
+![word](https://user-images.githubusercontent.com/68042822/163939766-3c48e769-49a8-41ed-9cb9-e283b5665b79.png)
 
 <br />
 <br />
